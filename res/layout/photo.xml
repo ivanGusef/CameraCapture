@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/photo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@android:string/unknownName"
+            android:scaleType="centerCrop"/>
+    <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:scrollbars="vertical"
+            android:background="@android:drawable/editbox_background_normal"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"/>
+</LinearLayout>
