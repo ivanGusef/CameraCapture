@@ -2,12 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_height="fill_parent"
+              android:background="#222222">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_holo_light"
+        android:inputType="text"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_holo_light"
+        android:inputType="text"
+        android:textColor="@android:color/white"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Photo"
         android:onClick="onAdd"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:onClick="onTakePhoto"/>
+
     <com.gusev.test.cameracapture.view.PhotoGallery
         android:id="@+id/gallery"
         android:layout_width="match_parent"
